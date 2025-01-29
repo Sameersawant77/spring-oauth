@@ -26,7 +26,7 @@ import com.basic.oauth.repository.RSAKeyRepository;
 public class InitData {
 
     @Bean
-    public ApplicationRunner applicationRunner(RegisteredClientRepository registeredClientRepository, UserDetailsManager userDetailsManager, RSAKeyRepository rsaKeyRepository) {
+    public ApplicationRunner applicationRunner(RegisteredClientRepository registeredClientRepository, RSAKeyRepository rsaKeyRepository) {
         return args -> {
             if (Objects.isNull(registeredClientRepository.findByClientId("netc-portal"))) {
                 RegisteredClient registeredClient = RegisteredClient.withId(UUID.randomUUID().toString())
