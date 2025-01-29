@@ -18,7 +18,7 @@ public class CreateUserRequest {
     private String usertype;
     private String username;
     private String password;
-    private String status = "ACTIVE"; // default value
+    private String status = "ACTIVE"; 
     
     // Getters and Setters
     public String getName() { return name; }
