@@ -17,7 +17,6 @@ import org.springframework.security.oauth2.core.oidc.OidcScopes;
 import org.springframework.security.oauth2.server.authorization.client.RegisteredClient;
 import org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository;
 import org.springframework.security.oauth2.server.authorization.settings.ClientSettings;
-import org.springframework.security.provisioning.UserDetailsManager;
 
 import com.basic.oauth.model.RSAKeyPair;
 import com.basic.oauth.repository.RSAKeyRepository;
